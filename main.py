@@ -71,7 +71,7 @@ def luv2lhk(l, u, v):
 
 
 # read in image
-img2 = cv2.imread('img\M17_01.jpg', flags=cv2.IMREAD_COLOR)
+img2 = cv2.imread('img\M17_02.jpg', flags=cv2.IMREAD_COLOR)
 
 img = cv2.cvtColor(img2, cv2.COLOR_RGB2BGR)
 
@@ -155,3 +155,4 @@ for i in range(x):
 # displays original and final image, saves grayscale conversion to .jpg
 plt.imshow(final_image)
 plt.show()
+scipy.misc.imsave('result.jpg', final_image)
